@@ -1,0 +1,7 @@
+<h1>Items Show Page</h1>
+
+<ol>
+  <% @items.each do |item| %>
+    <li><%= link_to item.name, "/items/#{item.id}" %></li>
+  <% end %>
+</ol>
