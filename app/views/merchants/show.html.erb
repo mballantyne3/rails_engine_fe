@@ -1,1 +1,8 @@
 <h1><%= "Welcome back #{@merchant.name}" %></h1>
+
+<h2>Items</h2>
+<ol>
+<% @items.each do |item| %>
+  <li><%= item.name %></li>
+<% end %>
+</ol>
